@@ -15,8 +15,10 @@ main (int argc, char **argv)
   uint32_t flags          = 0;
   int8_t verbose          = 0;
   int rv;
-  double mingap = 0.0;
-  double maxgap = 10.0;
+  double mingap     = 0.0;
+  double maxgap     = 10.0;
+  double *ptrmingap = NULL;
+  double *ptrmaxgap = NULL;
 
   if (argc < 2)
   {
@@ -40,7 +42,7 @@ main (int argc, char **argv)
   }
 
   /* Print the numbers of gap and overlap */
-  mstl3_printgaplist (mstl, ISOMONTHDAY, &mingap, &maxgap);
+  mstl3_printgaplist (mstl, ISOMONTHDAY, ptrmingap, ptrmaxgap);
 
   return 0;
 }
