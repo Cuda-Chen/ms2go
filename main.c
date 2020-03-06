@@ -5,6 +5,8 @@
 
 #include "libmseed.h"
 
+#include "gaputil.h"
+
 int
 main (int argc, char **argv)
 {
@@ -42,7 +44,8 @@ main (int argc, char **argv)
   }
 
   /* Print the numbers of gap and overlap */
-  mstl3_printgaplist (mstl, ISOMONTHDAY, ptrmingap, ptrmaxgap);
+  //mstl3_printgaplist (mstl, ISOMONTHDAY, ptrmingap, ptrmaxgap);
+  printGapAndOverlap (mstl, ISOMONTHDAY, ptrmingap, ptrmaxgap);
 
   return 0;
 }
