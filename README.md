@@ -1,6 +1,11 @@
 # ms2go
 Count the numbers of gap and overlap in each trace of miniSEED input.
 
+# Clone
+```
+$ git clone https://github.com/Cuda-Chen/ms2go.git --recursive
+```
+
 # How to Compile and Run
 ```
 $ make
