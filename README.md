@@ -9,7 +9,7 @@ $ git clone https://github.com/Cuda-Chen/ms2go.git --recursive
 # How to Compile and Run
 ```
 $ make
-$ ./ms2go <mseedfile path>
+$ ./ms2go [mseedfile]
 ```
 
 # Reference

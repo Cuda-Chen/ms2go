@@ -7,6 +7,14 @@
 
 #include "gaputil.h"
 
+static void
+usage ()
+{
+  printf ("Usage: ms2go [mseedfile]\n");
+  printf ("## Options ##\n"
+          " mseedfile      input miniSEED file\n");
+}
+
 int
 main (int argc, char **argv)
 {
@@ -24,7 +32,8 @@ main (int argc, char **argv)
 
   if (argc < 2)
   {
-    ms_log (1, "Usage: %s <mseedfile>\n", argv[0]);
+    //ms_log (1, "Usage: %s <mseedfile>\n", argv[0]);
+    usage ();
     return -1;
   }
   mseedfile = argv[1];
